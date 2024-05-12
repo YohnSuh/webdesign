@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/a-1.css" rel="stylesheet">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/a-1.js"></script>
     <title>a-1</title>
 </head>
 <body>
@@ -54,13 +56,27 @@
             </header>
             <div class="content">
                 <div class="slide-wrap">
+                    <ul>
+                        <li>
+                            <img src="image/banner1.jpg" alt="배너1">
+                            <p>매일 업데이트 되는 새로운 상품</p>
+                        </li>
+                        <li>
+                            <img src="image/banner2.jpg" alt="배너1">
+                            <p>매일 업데이트 되는 새로운 상품</p>
+                        </li>
+                        <li>
+                            <img src="image/banner3.jpg" alt="배너1">
+                            <p>매일 업데이트 되는 새로운 상품</p>
+                        </li>
+                    </ul>
                 </div><!--slide-wrap-->
                 <div class="article-wrap">
                     <article class="notice">
                         <ul>
-                            <li>
+                            <li class="notice-tab tab-on">
                                 <a href="#">공지사항</a>
-                                <div class="con">
+                                <div class="notice-con tabcon">
                                     <a href="#" class="popup">
                                         <p>여름휴가 배송 지연 안내</p>
                                         <span>2024.05.11</span>
@@ -73,24 +89,55 @@
                                         <p>교환 및 반품 안내사항</p>
                                         <span>2024.05.11</span>
                                     </a>
-                                </div><!--con-->
-                            </li>
-                            <li>
+                                </div><!--notice-con-->
+                            </li><!--notice-tab-->
+                            <li class="gallery-tab">
                                 <a href="#">갤러리</a>
-
-                            </li>
+                                <div class="gallery-con tabcon">
+                                    <div>
+                                        <a href="#"><img src="image/banner1.jpg"></a>
+                                        <a href="#"><img src="image/banner2.jpg"></a>
+                                        <a href="#"><img src="image/banner3.jpg"></a>
+                                    </div>
+                                </div><!--gallery-con-->
+                            </li><!--gallery-tab-->
                         </ul>
                     </article><!--notice-->
-                    <article class="gallery">
-
-                    </article><!--gallery-->
+                    <article class="banner">
+                        <a href="#">
+                            <h2>신규회원을 위한 쿠폰</h2>
+                            <div>
+                                <p>혜택1. 첫 구매 무료 배송</p>
+                                <p>혜택2. 최초 적립 시 마일리지 3% 적립</p>
+                                <p>혜택3. 무료반품 및 환불</p>
+                            </div>
+                        </a>
+                    </article><!--banner-->
                     <article class="link">
-
+                        <h2>바로가기</h2>
+                        <div>
+                            <a href="#"><img src="image/바로가기.png" alt="바로가기"></a>
+                            <a href="#"><img src="image/바로가기.png" alt="바로가기"></a>
+                            <a href="#"><img src="image/바로가기.png" alt="바로가기"></a>
+                        </div>
                     </article><!--link-->
                 </div><!--article-wrap-->
+                <div class="popup-wrap">
+                    <div>
+                        <h2>popup</h2>
+                        <p>신규 회원을 위한 다양한 이벤트!</p>
+                    </div>
+                    <button>close</button>
+                </div><!--popup-wrap-->
             </div><!--content-->
             <footer>
-
+                <a href="#" class="f-logo"><img src="image/logo.png" alt="푸터 로고"></a>
+                <p>copyright 2024. 무단으로 본 사이트를 복제 또는 재가공 시 처벌을 받을 수 있습니다.</p>
+                <div class="sns">
+                    <a href="#"><img src="image/바로가기.png"></a>
+                    <a href="#"><img src="image/바로가기.png"></a>
+                    <a href="#"><img src="image/바로가기.png"></a>
+                </div>
             </footer>
         </div><!--inner-->
     </div><!--wrap-->
