@@ -1,0 +1,64 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+a {color: inherit;text-decoration: none;}
+
+#wrap {height:100vh;}
+
+header {position: relative;width: 1340px;height:100px;margin: auto;background: #447ecf;}
+header h1 {display: flex;justify-content: center;align-items: center;width: 200px;height: 100%;}
+header h1 img {width: 50px;}
+.menu-bg {display: none;position: absolute;top:100%;left: 0;z-index:9;width: 100%;height: 220px;background: #fff;}
+nav {position: absolute;bottom:0;right:50px;z-index:9;text-align: center;}
+nav > ul {display: flex;}
+nav > ul > li {position: relative;width: 150px;}
+nav > ul > li > a {display: block;padding: 10px 0; font-size: 18px;font-weight: bold;}
+nav .sub {display: none;position: absolute;width: 100%;}
+nav .sub > li > a {display: block;padding:10px;font-size: 16px;}
+nav > ul > li:hover > a {background: #fff;color: #447ecf;}
+nav .sub > li:hover > a {background: #92bcf6;}
+
+.slide {position: relative;width: 100%;height:350px;background: #de9;overflow: hidden;}
+.slide ul {position: absolute;top:0;left: 0;display: flex;width: 300%;height: 100%;}
+.slide li {display: flex;justify-content: center;align-items: center;width: 100%;}
+.slide li:nth-child(1) {background: url('../image/banner1.jpg') no-repeat center / cover;}
+.slide li:nth-child(2) {background: url('../image/banner2.jpg') no-repeat center / cover;}
+.slide li:nth-child(3) {background: url('../image/banner3.jpg') no-repeat center / cover;}
+.slide p {font-size: 36px;font-weight: bold;color: #fff;}
+
+.contents {position: relative;;width: 1340px;height:600px;margin: auto;background: #fff;}
+.link {position: absolute;top:-100px;left: 0;height:100px;display: flex;justify-content: space-between;align-items: center;background: #447ecf;}
+.link > a {display: flex;justify-content: center;align-items: center;width: calc(1340px / 5);}
+.link > a > img {width: 50px;}
+.link > a > span {padding-left: 20px;font-weight: bold;color: #fff;}
+.banner {display: flex;justify-content: space-between;align-items: center;padding: 20px 40px;}
+.banner > img {width: 300px;}
+.banner > p {width: calc(100% - 350px );padding-left: 30px;}
+.banner > a > img {width: 50px;}
+.tab {margin-left: 40px;width: 700px;}
+.tab > ul {width: 100%;display: flex;}
+.tab > ul > li {position: relative;display:flex;}
+.tab > ul > li > a {display: block;width: 100px;line-height:30px;text-align: center;color: #92bcf6;font-weight: bold;}
+.tab > ul > li > .on {background: #92bcf6;border-radius: 10px 10px 0 0;color: #fff;}
+.tab .tab-inner {position: absolute;top:30px;left:0;width: 700px;border-top: 3px solid #92bcf6;}
+.tab .notice .tab-inner li {display: flex;justify-content: space-between;align-items: center;height:40px;border-bottom: 1px solid #92bcf6;}
+.tab .notice .date {color: #ccc;}
+.tab .gallery > div {display: none;}
+.tab .gallery .tab-inner {display: flex;left: -100px;justify-content: space-around;padding-top: 20px;}
+.tab .gallery .tab-inner a {width: calc(100% / 3);}
+.tab .gallery .photo {width: 200px;height: 200px;}
+.tab .gallery .photo img {width: 100%;height: 100%;object-fit: cover;}
+.tab .gallery p {text-align: center;}
+
+.popup {display: none;position: fixed;top:0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .7);backdrop-filter: blur(10px);}
+.popup .box {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 300px;height:400px;background: #fff;text-align: center   ;}
+.popup button {position: absolute;bottom: 0;left: 0;width: 100%;height:30px;}
+
+footer {display: flex;align-items: center;width: 1340px;height: 120px;margin:auto;background: #ccc;}
+.f-logo {width: 200px;text-align: center;filter: grayscale(100%);}
+.f-logo img {width: 50px;}
+.f-inner {height: 100%;padding-left: 50px;}
+.f-inner > div {display: flex;align-items: center;height: 50%;}
+.f-inner ul {display: flex;color: #fff;}
+.f-inner ul li::after {content: '';display: inline-block;width: 1px;height: 14px;background: #fff;margin: 0 10px;}
+.f-inner ul li:last-child::after {display: none;}
+.f-inner .copyright {}
