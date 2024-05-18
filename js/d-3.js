@@ -17,3 +17,21 @@ setInterval(function() {
                            .end()
                            .appendTo('.slide');
 }, 3000);
+
+$('.tab > ul > li').click(function() {
+    $(this).addClass('tab-on');
+    $(this).find('div').show();
+
+    $(this).siblings().removeClass('tab-on');
+    $(this).siblings().find('div').hide();
+
+    return false;
+});
+
+$('.popupBtn').click(function() {
+    $('.popup').show();
+});
+
+$('button').click(function() {
+    $('.popup').hide();
+});
