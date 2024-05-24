@@ -1,0 +1,20 @@
+/* #5e3bf5 */
+
+@charset "UTF-8";
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none;color:inherit;}
+img {max-width: 100%;}
+
+
+/* #wrap {width: 100%;} */
+
+.inner {display: flex;width: 100%;height: 850px;}
+header {width: 200px;height: 100%;background: red;}
+.inner > div {width: calc(100% - 200px);}
+.slide {width: 100%;height: 400px;background: pink;}
+.banner {width:100%;height: 200px;background: powderblue;}
+.contents {width:100%;height: 250px;background: #ef0;}
+.popup {display: none;}
+footer {height: 100px;background: #5e3bf5;}
