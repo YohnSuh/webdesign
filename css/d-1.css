@@ -6,12 +6,23 @@
 ul {list-style: none;}
 a {text-decoration: none;color:inherit;}
 img {max-width: 100%;}
-
+body {background: #fff;color:#333;}
 
 /* #wrap {width: 100%;} */
 
 .inner {display: flex;width: 100%;height: 850px;}
-header {width: 200px;height: 100%;background: red;}
+header {width: 200px;height: 100%;background: #f8a949;}
+header h1 {padding:40px 10px;}
+nav {margin-top: 30px;padding:0 10px;}
+nav > ul {width: 100%;background: #fff;border-radius: 10px;overflow: hidden;}
+nav > ul > li > a {display: block;padding: 10px 20px;font-size: 18px;font-weight: bold;color:#5e3bf5;}
+nav .sub {display: none;}
+nav .sub > li > a {display: block;padding: 10px 20px;font-size: 16px;}
+nav > ul > li:hover > a {background: #5e3bf5; color: #fff;}
+nav .sub > li:hover > a {background: #ffcf93;}
+header .spot {display: flex;justify-content: center;margin-top: 30px;margin-right: auto;margin-left: auto;text-align: center;}
+header .spot > li:first-child::after {content: '|';padding:0 15px;}
+
 .inner > div {width: calc(100% - 200px);}
 .slide {width: 100%;height: 400px;background: pink;}
 .link {}
