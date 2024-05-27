@@ -23,10 +23,42 @@ nav .sub > li:hover > a {background: #ffcf93;}
 header .spot {display: flex;justify-content: center;margin-top: 30px;margin-right: auto;margin-left: auto;text-align: center;}
 header .spot > li:first-child::after {content: '|';padding:0 15px;}
 
-.inner > div {width: calc(100% - 200px);}
-.slide {width: 100%;height: 400px;background: pink;}
-.link {}
-.banner {width:100%;height: 200px;background: powderblue;}
-.contents {width:100%;height: 250px;background: #ef0;}
+.inner > div {width: calc(100% - 200px);position: relative;}
+.slide {width: 100%;height: 400px;position: relative;overflow: hidden;}
+.slide > div {position: absolute;top:0;left: 0;width: 100%;height: 300%;}
+.slide > div > div {height: 400px;position: relative;}
+.s1 {background: url('../image/slided1_1.jpg') no-repeat center / cover;}
+.s2 {background: url('../image/slided1_2.jpg') no-repeat center / cover;}
+.s3 {background: url('../image/slided1_3.jpg') no-repeat center / cover;}
+.slide .txt {position: absolute;bottom: 30px;left: 30px;padding:10px 150px;background: rgba(255, 255, 255, 0.7);text-align: center;border-radius: 20px;}
+.slide .txt h3 {font-size: 28px;}
+.slide .txt p {font-size: 24px;}
+.link {position: absolute;top:30px;right:30px;border-radius: 20px;overflow: hidden;background: #5e3bf5;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+.link > ul > li {width: 120px;height: 100px;padding:10px;text-align: center;}
+.link a {display: block;border-bottom: 1px solid #fff;padding-bottom: 10px;}
+.link li:last-child a {border-bottom: 0;}
+.link a img {width: 50px;}
+.link a p {color: #fff;}
+.banner {width:100%;height: 200px;padding: 20px;}
+.banner > a {display: flex;align-items: end;}
+.banner .photo {width: 200px;height: 150px;margin-right: 20px;border-radius: 10px;overflow: hidden;}
+.banner .photo img {width: 100%;height: 100%;object-fit: cover;}
+.banner .txt {width: calc(100% - 200px);padding-bottom: 20px;}
+.banner .txt h3 {font-size: 24px;}
+.banner .txt p {font-size: 18px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.tab {width:100%;height: 250px;}
+.tab > ul {display: flex;position: relative;padding: 20px;}
+.tab > ul > li > a {display: block;padding:10px 0;width:150px;text-align: center;font-weight: bold;color: #5e3bf5;font-size: 18px;border-radius: 20px 20px 0 0;}
+.tab > ul ul {position: absolute;width:calc(100% - 40px);height: auto;background: #5e3bf5;color: #fff;min-width:300px;}
+.tab .notice li {padding: 10px;display: flex;justify-content: space-between;border-bottom: 1px solid #fff;}
+.tab .notice a {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.tab .notice li:last-child {border-bottom: 0;}
+.tab .gallery > div {display: none;}
+.tab .gallery ul {display: flex;left:20px;height:167px;align-items: center;justify-content: space-between;}
+.tab .gallery li {padding: 5px;height: 100%;}
+.tab .gallery img {height: 100%;}
+
+.tab .on {background: #5e3bf5;color:#fff;}
+
 .popup {display: none;}
 footer {height: 100px;background: #5e3bf5;}
