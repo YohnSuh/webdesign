@@ -24,3 +24,11 @@ $('.tab > ul > li > a').click(function() {
 
     return false;
 });
+
+$('.popupBtn').click(function() {
+    $('.popup').show();
+    return false;
+});
+$('.popup button').click(function() {
+    $('.popup').hide();
+});
