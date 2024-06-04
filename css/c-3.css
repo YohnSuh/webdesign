@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none;color:inherit;}
+body {background: #fff;color:#333;}
+
+#wrap {width: 1000px;height: 650px;display: flex;}
+
+header {width: 200px;height: 100%;background: #fed;}
+
+.inner {width: 800px;}
+
+.slide {width: 100%;height: 350px;background: #ed3;}
+
+
+.contents {width: 100%;height: 200px;background: #ed9;}
+
+
+footer {width: 100%;height: 100px;background: #888;display: flex;}
+
