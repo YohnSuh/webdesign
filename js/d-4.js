@@ -22,4 +22,6 @@ $('.contents > ul > li').click(function() {
     $(this).siblings().find('div').hide();
     $('.on').removeClass('on');
     $(this).find('a').addClass('on');
+
+    return false;
 });

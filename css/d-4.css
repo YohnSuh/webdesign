@@ -20,7 +20,7 @@ nav .sub > li {width: 200px;}
 nav .sub > li > a {display: flex;height:50px;font-size: 14px;align-items: center;justify-content: center;}
 nav > ul > li:hover > a {background: #eea700;}
 nav .sub > li:hover > a {background: #ee6700;}
-.menu-bg {position: fixed;top:150px;left: 180px;width: calc(100% - 160px);height: 200px;background: #eea700;z-index: 999;display: none;}
+.menu-bg {position: absolute;top:150px;left: 180px;width: calc(100% - 180px);height: 200px;background: #eea700;z-index: 999;display: none;}
 
 .inner > div {width: calc(100% - 200px);}
 
@@ -36,7 +36,7 @@ nav .sub > li:hover > a {background: #ee6700;}
 .link > ul > li {flex:1;text-align: center;}
 .link img {width: 70px;}
 
-.contents {width: 100%;height: 250px;background: #e29;padding: 20px;}
+.contents {width: 100%;height: 250px;padding: 20px;}
 .contents > ul {display: flex;position: relative;width: 100%;}
 .contents > ul > li > a {display:flex;justify-content: center;align-items: center;width: 150px;height: 40px;background: #d8d8d8;border-radius: 20px 20px 0 0;}
 .contents > ul > li > div {position: absolute;left:0;width: 100%;background: #eea700;}
